@@ -1,3 +1,7 @@
+@Library('mylibrary') _
+
+import com.cleverbuilder.GlobalVars
+
 node (label: 'slaves') {
  
    def app
