@@ -1,8 +1,8 @@
-#!/usr/bin/env groovy
+
 
 node (label: 'slaves') {
 
-def groovyHome = tool 'groovy-default'
+//def groovyHome = tool 'groovy-default'
   
    def app
 
