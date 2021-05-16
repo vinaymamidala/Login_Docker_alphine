@@ -13,7 +13,7 @@ def groovyHome = tool 'groovy-default'
   
    stage("Build image"){
     
-   app = docker.build("vinaymamidala/login_docker_pipeline_automations:${env.BUILD_NUMBER}")
+    docker.build("vinaymamidala/login_docker_pipeline_automations:${env.BUILD_NUMBER}")
     
  }
 }
