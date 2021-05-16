@@ -1,6 +1,12 @@
 
 node (label: 'slaves') {
- 
+
+ tools {
+  
+  //Install 
+  
+  groovy "groovy-default"
+  
    def app
 
    stage('Clone repository'){
