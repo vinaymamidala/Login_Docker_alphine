@@ -1,11 +1,7 @@
 
 node (label: 'slaves') {
 
- tools {
-  
-  //Install 
-  
-  groovy "groovy-default"
+def groovyHome = tool 'groovy-default'
   
  }
    def app
