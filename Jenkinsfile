@@ -7,6 +7,7 @@ node (label: 'slaves') {
   
   groovy "groovy-default"
   
+ }
    def app
 
    stage('Clone repository'){
