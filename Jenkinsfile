@@ -3,7 +3,6 @@ node (label: 'slaves') {
 
 def groovyHome = tool 'groovy-default'
   
- }
    def app
 
    stage('Clone repository'){
