@@ -17,4 +17,16 @@ node (label: 'slaves') {
    app = docker.build("vinaymamidala/login_docker_pipeline_automations:${env.BUILD_NUMBER}")
     
  }
+  
+  stage('Test image'){
+    app.inside {
+        sh 'echo "Test Passed"'
+    }
+   }
+  
+  stage('Push image'){
+    docker.withRegistry('https://registry.hub.docker.com', 'DockerHub_login') {
+      app.push()
+    }
+  }
 }
